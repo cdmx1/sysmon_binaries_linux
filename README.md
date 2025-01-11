@@ -21,9 +21,14 @@ For more information on configuring and using Sysmon on Linux, refer to the offi
   ```bash
   sudo yum install json-glib-devel
 
-### Intallation Instructions
+### Installation Instructions for Amazon Linux 2
 
-```bash
-sudo rpm -i am2/sysinternalsebpf-0.0.0-0.amzn2.x86_64.rpm
+To install the precompiled Sysmon binaries on **Amazon Linux 2**, follow the steps below:
 
-sudo rpm -i sysmonforlinux-0.0.0-0.amzn2.x86_64.rpm
+1. **Install the `sysinternalsebpf` package**:
+   ```bash
+   sudo rpm -Uvh https://github.com/cdmx1/sysmon_binaries_linux/releases/download/v0.0.0-sysinternalsebpf-amzn2/sysinternalsebpf-0.0.0-0.amzn2.x86_64.rpm
+   
+2. **Install the `sysmonforlinux` package**:
+   ```bash
+   sudo rpm -Uvh https://github.com/cdmx1/sysmon_binaries_linux/releases/download/v0.0.0-sysinternalsebpf-amzn2/sysmonforlinux-0.0.0-0.amzn2.x86_64.rpm
